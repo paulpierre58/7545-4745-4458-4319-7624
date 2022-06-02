@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta data-n-head="ssr" charset="utf-8">
+    <title>Gowther | Accueil</title>
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="./assets/img/gowther.png">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="scrollbar" id="scrollp">
+        <div class="section header">
+            <div class="header-nav">
+                <ul>
+                    <li>
+                        <a href="./acceuil.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="./a-propos.html">A propos</a>
+                    </li>
+                    <li>
+                        <a href="#">News</a>
+                    </li>
+                    <li>
+                        <a href="./notre-equipe.html">Notre équipe</a>
+                    </li>
+                    <li>
+                        <a href="#">Evénement</a>
+                    </li>
+                    <li>
+                        <a href="#">Forum</a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/9UJSyAy5Rm">Support</a>
+                    </li>
+                </ul>
+                <ul class="ul-right">
+                    <li>
+                        <a href="./connexion.html">Connexion</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-mobile">
+                <div class="dropdown">
+                    <button class="menu" onclick="functionMenu()"><i class="fal fa-bars"></i></button>
+                    <div class="drop-content" id="menuDrop">
+                        <a href="./acceuil.html">Accueil</a>
+                        <a href="./a-propos.html">A propros</a>
+                        <a href="#">News</a>
+                        <a href="./notre-equipe.html">Notre équipe</a>
+                        <a href="#">Evénement</a>
+                        <a href="#">Forum</a>
+                        <a href="https://discord.gg/9UJSyAy5Rm">Support</a>
+                        <a href="./connexion.html">Connexion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section pvp">
+            <div class="container">
+                <div class="titre">Bienvenue sur Gowther</div>
+                <div class="descripacc">Le serveur Gowther et un serveur Mini-Jeux Vanilla 1.12.2 crack accepté .
+                </div>
+            </div>
+        </div>
+        <div class="section footer">
+            <div class="container">
+                <p> © Gowther 2021 - 2022 <a href="./mentions-legales.html">Mentions légales</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function functionMenu() {
+            document.getElementById("menuDrop").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdowns = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

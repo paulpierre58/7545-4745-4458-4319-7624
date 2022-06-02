@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+/*font-family     : 'Montserrat', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Mulish&display=swap');
+/*font-family     : 'Dosis', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap');
+/*font-family     : 'Cuprum', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&family=El+Messiri&display=swap');
+/*font-family     : 'Cuprum', sans-serif;
+font-family       : 'El Messiri', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=Zen+Kurenaido&display=swap');
+/*font-family     : 'PT Sans Narrow', sans-serif;
+font-family       : 'Zen Kurenaido', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
+/*font-family     : 'Shippori Antique', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+/*font-family     : 'Poppins', sans-serif;*/
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', "Raleway", Tahoma, Geneva, Verdana ,sans-serif;
+
+}
+
+body {
+    background: #333;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.pito{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+
+/*Pito is class icon i*/
+
+.pito i {
+    margin-top: -20px;
+}
+
+/*Pito is class icon i*/
+
+/*Pito*/
+
+
+
+.card{
+    width: 300px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px;
+    margin: 50px;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    cursor: pointer;
+
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    border-radius: 20px;
+    transition: all 0.6s ease;
+
+}
+
+.card .card_content{
+    z-index: 80;
+   transform: translateY(120px); 
+   background: rgb(0, 23, 151,0.8);
+   height: 135px;
+   text-align: center;
+   padding: 20px 5px;
+   border-radius: 20px;
+   opacity: 0;
+   transition: all 0.6s ease;
+
+}
+
+.card .card_content h3{
+    color: rgb(255, 255, 255);
+    letter-spacing: 3px;
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+.card .card_content h4{
+    color: rgb(255, 136, 0);
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.card .card_content ul{
+    margin-top: 15px;
+
+}
+
+.card .card_content ul li{
+    display: inline;
+    margin: 0 10px;
+
+}
+
+.card .card_content ul li i{
+    font-size: 25px;
+    opacity: 0.8;
+    color: rgb(255, 255, 255);
+    transition: all 0.6s ease;
+
+}
+
+.card:hover img{
+    opacity: 0.7;
+
+}
+
+.card:hover .card_content{
+    transform: translateY(-120px);
+    opacity: 1;
+
+}
+
+.card .card_content ul li i:hover{
+    color: rgb(113, 175, 255);
+}
+
+/*lulmax*/
+
+.lulu{
+    width: 300px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px;
+    margin: 50px;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    cursor: pointer;
+
+}
+
+.lulu img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    border-radius: 20px;
+    transition: all 0.6s ease;
+
+}
+
+.lulu .lulu_content{
+    z-index: 80;
+   transform: translateY(120px); 
+   background: rgba(25, 25, 26, 0.8);
+   height: 135px;
+   text-align: center;
+   padding: 20px 5px;
+   border-radius: 20px;
+   opacity: 0;
+   transition: all 0.6s ease;
+
+}
+
+.lulu .lulu_content h3{
+    color: rgb(255, 255, 255);
+    letter-spacing: 3px;
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+.lulu .lulu_content h4{
+    color: rgb(255, 136, 0);
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.lulu .lulu_content ul{
+    margin-top: 15px;
+
+}
+
+.lulu .lulu_content ul li{
+    display: inline;
+    margin: 0 10px;
+
+}
+
+.lulu .lulu_content ul li i{
+    font-size: 25px;
+    opacity: 0.8;
+    color: rgb(255, 255, 255);
+    transition: all 0.6s ease;
+    
+}
+
+.lulu:hover img{
+    opacity: 0.7;
+
+}
+
+.lulu:hover .lulu_content{
+    transform: translateY(-120px);
+    opacity: 1;
+
+}
+
+.lulu .lulu_content ul li i:hover{
+    color: rgba(131, 131, 131, 0.4);
+}
+
+/*CapitaineChrysto*/
+
+.chry{
+    width: 300px;
+    height: 300px;
+    box-shadow: rgba(0, 38, 255, 0.4) 5px 5px;
+    margin: 50px;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    cursor: pointer;
+
+}
+
+.chry img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    border-radius: 20px;
+    transition: all 0.6s ease;
+
+}
+
+.chry .chry_content{
+    z-index: 80;
+   transform: translateY(120px); 
+   background: rgba(0, 25, 253, 0.8);
+   height: 135px;
+   text-align: center;
+   padding: 20px 5px;
+   border-radius: 20px;
+   opacity: 0;
+   transition: all 0.6s ease;
+
+}
+
+.chry .chry_content h3{
+    color: rgb(255, 255, 255);
+    letter-spacing: 3px;
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+.chry .chry_content h4{
+    color: rgb(255, 136, 0);
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.chry .chry_content ul{
+    margin-top: 15px;
+
+}
+
+.chry .chry_content ul li{
+    display: inline;
+    margin: 0 10px;
+
+}
+
+.chry .chry_content ul li i{
+    font-size: 25px;
+    opacity: 0.8;
+    color: rgb(255, 255, 255);
+    transition: all 0.6s ease;
+
+}
+
+.chry:hover img{
+    opacity: 0.7;
+
+}
+
+.chry:hover .chry_content{
+    transform: translateY(-120px);
+    opacity: 1;
+
+}
+
+.chry .chry_content ul li i:hover{
+    color: rgba(0, 4, 255, 0.8);
+}
+
+/*Ounzi*/
+
+.ou{
+    width: 300px;
+    height: 300px;
+    box-shadow: rgba(129, 128, 128, 0.4) 5px 5px;
+    margin: 50px;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    cursor: pointer;
+
+}
+
+.ou img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    border-radius: 20px;
+    transition: all 0.6s ease;
+
+}
+
+.ou .ou_content{
+    z-index: 80;
+   transform: translateY(120px); 
+   background: rgba(125, 126, 126, 0.8);
+   height: 135px;
+   text-align: center;
+   padding: 20px 5px;
+   border-radius: 20px;
+   opacity: 0;
+   transition: all 0.6s ease;
+
+}
+
+.ou .ou_content h3{
+    color: rgb(255, 255, 255);
+    letter-spacing: 3px;
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+.ou .ou_content h4{
+    color: rgb(139, 78, 20);
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.ou .ou_content ul{
+    margin-top: 15px;
+
+}
+
+.ou .ou_content ul li{
+    display: inline;
+    margin: 0 10px;
+
+}
+
+.ou .ou_content ul li i{
+    font-size: 25px;
+    opacity: 0.8;
+    color: rgb(255, 255, 255);
+    transition: all 0.6s ease;
+
+}
+
+.ou:hover img{
+    opacity: 0.7;
+
+}
+
+.ou:hover .ou_content{
+    transform: translateY(-120px);
+    opacity: 1;
+
+}
+
+.ou .ou_content ul li i:hover{
+    color: rgba(43, 51, 51, 0.8);
+}
+
+/*retour*/
+
+.button {
+    background-color: rgb(82, 82, 82);
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 5px 20px;
+    border-radius: 2rem;
+    font-style:italic;
+}
+
+.button:hover {
+    background-color: rgb(0, 17, 255);
+}
+
+/*equipe*/
+
+.notre {
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    text-align: center;
+    text-decoration:underline;
+    display: inline;
+    font-size: 40px;
+    margin: 5px 500px;
+    border-radius: 2rem;
+}
